@@ -4,12 +4,53 @@ h1 {
 
 input {
   width: 50%;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-bottom: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
 }
 
 button {
   padding: 0.5rem;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
+}
+
+.shortened_display {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.25rem;
+}
+
+.spinner {
+  margin-top: 1rem;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
